@@ -1,0 +1,289 @@
+2016/01/04 11:49:22 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "themes/flaty/index.html".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('themes/flaty/in...', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('themes/flaty/in...')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
+2016/01/04 11:49:42 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "themes/flaty/code/index.html".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('themes/flaty/co...', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('themes/flaty/co...')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
+2016/01/04 11:49:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/themes/flaty/code/index.html".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('/themes/flaty/c...', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('/themes/flaty/c...')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
+2016/01/04 11:50:03 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "../themes/flaty/code/index.html".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('../themes/flaty...', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('../themes/flaty...')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
+2016/01/04 12:33:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:34:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:35:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:35:10 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:35:12 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:35:15 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:35:16 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:36:55 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:37:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index.php".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index...')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index.php
+---
+2016/01/04 12:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index.php".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index...')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index.php
+---
+2016/01/04 12:37:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index
+---
+2016/01/04 12:37:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index.html".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index...')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index.html
+---
+2016/01/04 12:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard/index.html".' in F:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard/index...')
+#1 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ssc_haf/index.php?r=dashboard/index.html
+---
+2016/01/04 12:38:46 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('dashboard/index', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('dashboard/index')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
+2016/01/04 12:39:27 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:40:08 [error] [php] strpos() expects parameter 1 to be string, array given (F:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): SiteController->render()
+#4 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 F:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\ssc_haf\index.php(13): CWebApplication->run()
+REQUEST_URI=/ssc_haf/
+in F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php (32)
+in F:\xampp\htdocs\ssc_haf\index.php (13)
+2016/01/04 12:43:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "dashboard/index".' in F:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('dashboard/index', NULL, true)
+#1 F:\xampp\htdocs\ssc_haf\protected\controllers\SiteController.php(32): CController->render('dashboard/index')
+#2 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 F:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ssc_haf/
+---
