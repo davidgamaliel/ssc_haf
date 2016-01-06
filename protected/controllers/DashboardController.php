@@ -29,6 +29,13 @@ class DashboardController extends Controller
 		
 	}
 
+	public function filters()
+    {
+        return array(
+            'rights', // perform access control for CRUD operations
+        );
+    }
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()
