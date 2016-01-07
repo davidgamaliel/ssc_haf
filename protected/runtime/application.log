@@ -1113,3 +1113,32 @@ Stack trace:
 REQUEST_URI=/ssc_haf/index.php
 HTTP_REFERER=http://localhost/ssc_haf/index.php?r=user/login
 ---
+2016/01/06 06:27:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nussc.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `authassignment`
+WHERE userid=:userid.
+in C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RWebUser.php (43)
+in C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RightsFilter.php (43)
+in C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RController.php (36)
+2016/01/06 06:27:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nussc.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `authassignment`
+WHERE userid=:userid' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(815): CDbAuthManager->checkAccess('Site.*', NULL, Array)
+#4 C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RWebUser.php(43): CWebUser->checkAccess('Site.*', Array, true)
+#5 C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RightsFilter.php(43): RWebUser->checkAccess('Site.*')
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\ssc_haf\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\ssc_haf\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ssc_haf/
+---
