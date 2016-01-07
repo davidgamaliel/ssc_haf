@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends RController
+class SiteController extends Controller
 {
 	/**
 	 * Declares class-based actions.
@@ -29,7 +29,7 @@ class SiteController extends RController
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->redirect(array('dashboard/index'));
 	}
 
 	/**
@@ -107,10 +107,12 @@ class SiteController extends RController
 		$this->redirect(Yii::app()->homeUrl);
 	}
 
+	/*
 	public function filters()
     {
         return array(
             'rights', // perform access control for CRUD operations
         );
     }
+    */
 }
