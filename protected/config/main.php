@@ -100,6 +100,10 @@ return array(
 
 	// application components
 	'components'=>array(
+		//path untuk model
+		'otentikasiWebModel' => array(
+			'class' => 'application.components.model.OtentikasiWebModel'
+		),
 
 		'user'=>array(
 			'class'=>'RWebUser',

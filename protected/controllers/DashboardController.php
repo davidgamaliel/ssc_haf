@@ -31,6 +31,19 @@ class DashboardController extends Controller
 
 	public function actionLogin()
 	{
+		if(isset($_POST['Login']))
+		{
+			//echo "<pre>";var_dump($_POST['Login']);die;
+			$boolean_check = Yii::app()->otentikasiWebModel->Authenticate($_POST['Login']);
+			if($boolean_check != false)
+			{
+				$this->redirect(Yii::app()->createUrl('dashboard/index'));
+			}
+			else
+			{
+				$this->refresh();
+			}
+		}
 		$dataRender = array(
 			
 		);
