@@ -29,12 +29,45 @@ class DashboardController extends Controller
 		
 	}
 
-	public function filters()
-    {
-        return array(
-            'rights', // perform access control for CRUD operations
-        );
-    }
+	public function actionLogin()
+	{
+		$dataRender = array(
+			
+		);
+		$this->layout = "login_layout";
+		$this->pageTitle = "Login";
+		$renderView = "login";
+		$this->render($renderView,
+			array(
+				'dataRender'=>$dataRender
+			)
+		);
+
+	}
+
+	public function actionLoginCheck()
+	{
+		if (isset($_POST['username']) && isset($_POST['password'])) 
+		{
+            $password =  md5($_POST['password']."Random\$SaltValue#WithSpecialCharacters12@$@4&#%^$*");
+            $user = $_POST['username'];
+            $query = Users::model()->find('username = \''.$user.'\' and password = \''.$password.'\'');
+            var_dump('hahahaha');
+            
+            //$user = md5($password. );
+            if ($query != NULL) {
+                $this->render('home');
+            }   
+            else {
+           		$this->render('home');
+          	}        
+        }
+        else $this->render('home');
+        // $this->redirect(Yii::app()->request->baseUrl);
+           
+	}
+
+	
 
 	// Uncomment the following methods and override them if needed
 	/*

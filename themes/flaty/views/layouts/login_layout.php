@@ -17,9 +17,13 @@
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/font-awesome/css/font-awesome.min.css">
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/signin.css" >
+
+        <link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/flaty.css">
+        <link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/flaty-responsive.css">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,7 +31,34 @@
         <![endif]-->
     </head>
 
-    <body>
-        <?php echo $content; ?> 
-    </body>
+    <body class="login-page">
+        <div class="login-wrapper">
+            <?php echo $content; ?> 
+        </div>
+
+        <!--basic scripts-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.4.min.js"><\/script>')</script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            function goToForm(form)
+            {
+                $('.login-wrapper > form:visible').fadeOut(500, function(){
+                    $('#form-' + form).fadeIn(500);
+                });
+            }
+            $(function() {
+                $('.goto-login').click(function(){
+                    goToForm('login');
+                });
+                $('.goto-forgot').click(function(){
+                    goToForm('forgot');
+                });
+                $('.goto-register').click(function(){
+                    goToForm('register');
+                });
+            });
+        </script>   
+    </body> 
 </html>
