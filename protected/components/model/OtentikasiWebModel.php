@@ -12,6 +12,7 @@ class OtentikasiWebModel extends CApplicationComponent
 	//login ke dalam aplikasi web
 	public function Authenticate($data)
 	{
+		//echo '<pre>'; var_dump($data);die;
 		$user = Users::model()->find('LOWER(username)=?',array($data['username']));
 		//jika terdapat user
 		if ($user != null)

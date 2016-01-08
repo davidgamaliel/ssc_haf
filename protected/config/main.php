@@ -121,6 +121,12 @@ return array(
             'rightsTable'=>'rights',
         ),
 
+        'session'=>array(
+            'class' => 'CDbHttpSession',
+            'connectionID' => 'db',
+            'sessionTableName' => 'dbsession',
+        ),
+
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

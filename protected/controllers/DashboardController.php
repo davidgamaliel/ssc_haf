@@ -2,19 +2,30 @@
 
 class DashboardController extends Controller
 {
+	private $_id;
+	private $username;
+	public $usrn;
+	
 
 	public function actionIndex() {
-		$dataRender = array(
-			
-		);
-		$this->layout = "main-simple";
-		$this->pageTitle = "Dashboard";
-		$renderView = "home";
-		$this->render($renderView,
-			array(
-				'dataRender'=>$dataRender
-			)
-		);
+
+		// echo Yii::app()->session->sessionID;die;
+		if (!Yii::app()->session['username']) {
+            $this->layout = 'login_layout';
+        }
+        else {
+			$dataRender = array(
+				
+			);
+			$this->layout = "main-simple";
+			$this->pageTitle = "Dashboard";
+			$renderView = "home";
+			$this->render($renderView,
+				array(
+					'dataRender'=>$dataRender
+				)
+			);
+		}
 	}
 
 	public function actionError()
@@ -31,18 +42,43 @@ class DashboardController extends Controller
 
 	public function actionLogin()
 	{
+		
 		if(isset($_POST['Login']))
 		{
-			//echo "<pre>";var_dump($_POST['Login']);die;
-			$boolean_check = Yii::app()->otentikasiWebModel->Authenticate($_POST['Login']);
-			if($boolean_check != false)
+			$data = $_POST['Login'];
+			$user = Users::model()->find('LOWER(username)=?',array($data['username']));
+			//jika terdapat user
+			if ($user != null)
 			{
-				$this->redirect(Yii::app()->createUrl('dashboard/index'));
+				if ($user->password == $data['password'])
+				{
+					$this->_id = $user->id;
+					$this->username = $user->username;
+					
+
+					Yii::app()->session['username'] = $this->username;
+					Yii::app()->session['id'] = $this->_id;
+					//Yii::app()->session->open();
+					$this->usrn = $this->username;
+
+					$this->redirect(Yii::app()->createUrl("dashboard/index"));
+					Yii::app()->user->setFlash('berhasil','Login Berhasil');
+					//return true;
+				}
+				else
+				{
+					Yii::app()->user->setFlash('gagal','Password Anda Salah');
+					//return false;
+					$this->refresh();
+				}
 			}
 			else
 			{
+				Yii::app()->user->setFlash('tidak_ditemukan','Username Tidak Ditemukan');
+				//return false;
 				$this->refresh();
 			}
+
 		}
 		$dataRender = array(
 			
@@ -78,6 +114,11 @@ class DashboardController extends Controller
         else $this->render('home');
         // $this->redirect(Yii::app()->request->baseUrl);
            
+	}
+
+	public function actionLogout()
+	{
+
 	}
 
 	
